@@ -1,18 +1,19 @@
 const dotenv = require('dotenv');
-dotenv.config({path: "./.env.deploy"});
+
+dotenv.config({ path: "./.env.deploy" });
 
 const {
-  DEPLOY_USER, 
-  DEPLOY_HOST, 
+  DEPLOY_USER,
+  DEPLOY_HOST,
   DEPLOY_REF,
   DEPLOY_REPOSITORY,
-  DEPLOY_PATH, 
+  DEPLOY_PATH,
 } = process.env;
 
 module.exports = {
-  apps : [{
-    name   : "mesto",
-    script : "dist/app.js"
+  apps: [{
+    name: 'mesto',
+    script: 'dist/app.js',
   }],
   deploy: {
     production: {
@@ -25,4 +26,4 @@ module.exports = {
       'post-deploy': 'cd backend && pwd && npm ci && npm run build && pm2 startOrRestart ecosystem.config.js --env production',
     },
   },
-}
+};
