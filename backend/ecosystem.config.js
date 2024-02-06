@@ -15,7 +15,7 @@ module.exports = {
     script : "dist/app.js"
   }],
   deploy: {
-    env_production: {
+    production: {
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
