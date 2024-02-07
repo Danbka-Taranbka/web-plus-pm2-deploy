@@ -139,7 +139,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('https://mesto.danbka-taranbka.nomoredomainswork.ru/');
+  const api = new Api('https://mesto.danbka-taranbka.nomoredomainswork.ru');
   
   export default api;
   
