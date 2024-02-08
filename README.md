@@ -4,4 +4,4 @@
 
 1) Public IP: 158.160.136.158
 2) Frontend: https://mesto.danbka-taranbka.nomoredomainswork.ru
-3) Backend: https://api.mesto.danbka-taranbka.nomoredomainswork.ru/
+3) Backend: https://api.mesto.danbka-taranbka.nomoredomainswork.ru
